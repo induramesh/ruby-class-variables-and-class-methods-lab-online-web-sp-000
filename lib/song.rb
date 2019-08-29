@@ -1,11 +1,12 @@
 class Song
   
+  #class variables 
   @@count = 0
   @@genres = []
   @@artists=[]
   
+  #instance variables 
   def initialize(name, artist, genre)  
-    # Instance variables  
     @name = name  
     @artist = artist
     @genre = genre
