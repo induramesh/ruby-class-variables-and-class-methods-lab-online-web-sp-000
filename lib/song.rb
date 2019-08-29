@@ -6,8 +6,7 @@ class Song
     @genre = genre
   end  
   
-  attr_accessor(new_name) 
-  
+  attr_accessor
   
   def display  
     puts "I am of #{@breed} breed and my name is #{@name}"  
