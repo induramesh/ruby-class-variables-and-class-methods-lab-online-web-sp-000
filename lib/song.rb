@@ -25,14 +25,14 @@ class Song
   end  
   
   def self.genres
-    @@genres.uniq!
+    @@genres.uniq
   end 
   
   def self.artists
-    @@artists.uniq!
+    @@artists.uniq
   end 
   
   def self.genre_count
     genres = {}
-    @@genres.map { k,v| |
+    @@genres.map { |val| genres[:val] = 1}
 end 
