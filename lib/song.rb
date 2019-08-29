@@ -34,5 +34,5 @@ class Song
   
   def self.genre_count
     genres = {}
-    @@genres.map { |val| genres[:val] = 1}
+    words.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
 end 
