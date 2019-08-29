@@ -34,5 +34,5 @@ class Song
   
   def self.genre_count
     genres = {}
-    @@genres.map { |k,v| 
+    @@genres.map { k,v| |
 end 
