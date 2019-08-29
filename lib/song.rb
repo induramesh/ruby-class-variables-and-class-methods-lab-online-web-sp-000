@@ -33,6 +33,7 @@ class Song
   end 
   
   def self.genre_count
-    genres = {}
-    words.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
+    words.each_with_object(Hash.new(0)) { |genre,counts| counts[genre] += 1 }
+  end 
+  
 end 
