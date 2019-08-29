@@ -1,14 +1,21 @@
 class Song
-    def initialize(name, artist, genre)  
+  
+  @@count = 0
+  
+  def initialize(name, artist, genre)  
     # Instance variables  
     @name = name  
     @artist = artist
     @genre = genre
+    @@count += 1
   end  
   
-  attr_accessor
+  #accessors
+  attr_accessor :name
+  attr_accessor :artist
+  attr_accessor :genre
   
-  def display  
-    puts "I am of #{@breed} breed and my name is #{@name}"  
+  def count  
+   @@count 
   end  
 end 
